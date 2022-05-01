@@ -4,7 +4,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner': "url('./assets/banner.jpg')",
+      }
+    },
   },
   plugins: [],
 }
