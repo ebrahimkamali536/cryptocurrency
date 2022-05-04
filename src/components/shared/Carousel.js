@@ -17,13 +17,14 @@ const Carousel = () => {
   };
   useEffect(() => {
     fetchTrendingCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
   const items = trendingCoin.map((coin) => {
     let profit = coin.price_change_percentage_24h >= 0;
 
     return (
       <Link to={`/coins/${coin.id}`} className="flex flex-col items-center">
-        <img src={coin?.image} alt={coin.name} className="mb-2.5 h-20" />
+        <img src={coin.image} alt={coin.name} className="mb-2.5 h-20" />
 
         <span className="text-sm mb-1">
           <span className="text-white mr-2">{coin.name}</span>

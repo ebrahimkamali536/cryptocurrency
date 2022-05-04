@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 //components
-import Banner from "../components/shared/Banner"
+import Banner from "../components/Banner"
 import CoinsTable from '../components/CoinsTable';
 
 const HomePage = () => {
